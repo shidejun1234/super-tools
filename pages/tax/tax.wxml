@@ -1,0 +1,23 @@
+<form bindsubmit='taxSubmit'>
+    <view class='tax-input'>
+        <text>税前收入（元）</text>
+        <input placeholder='请输入您的税前收入' name='revenue'></input>
+    </view>
+    <view class='tax-begin' bindtap='taxBegin'>
+        <view class='tax-begin-left'>起征点</view>
+        <view class='tax-begin-right'>
+            <text decode='nbsp'>{{taxBegin}}&nbsp;&nbsp;∨</text>
+        </view>
+    </view>
+    <view class='tax-begin'>
+        <view class='tax-begin-left' bindtap='isTaxSocial'>各项社会保险费</view>
+        <view class='tax-begin-right'>
+            <input focus="{{isTaxSocial}}" placeholder='0' name="taxSocial" value='{{taxSocial}}'></input>
+        </view>
+    </view>
+    <button form-type='submit'>开始计算</button>
+</form>
+<view class='result' wx:for="{{result}}">
+    <view class='result-left'>{{item.key}}</view>
+    <view class='result-right'>{{item.value}}</view>
+</view>

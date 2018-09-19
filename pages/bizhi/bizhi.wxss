@@ -1,0 +1,10 @@
+.img{
+    width: 100;
+    text-align: center;
+    margin-top: 50rpx;
+}
+.img button{
+    width: 50%;
+    border-radius: 22rpx;
+    background: #2bac2b;
+}

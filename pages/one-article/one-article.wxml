@@ -1,0 +1,13 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='article'>
+    <text class='title'>{{oneArticle.title}}</text>
+    <text class='author'>作者：{{oneArticle.author}}</text>
+    <!-- <text>内容：{{article.content}}</text> -->
+    <text class='next' bindtap='next'>下一篇</text>
+    <view class='img'>
+    <image src='../../images/top.png' mode='widthFix'></image>
+    </view>
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" style="position: absolute; left: 2%; top:200rpx; bottom: 10px; right: 2%;width:96%;">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </scroll-view>
+</view>

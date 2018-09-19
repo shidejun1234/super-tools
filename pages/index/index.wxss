@@ -1,0 +1,34 @@
+page{
+    background: #e5e5e5;
+}
+
+.swiper{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+
+.swiper image{
+    width: 100%;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-item{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20rpx auto;
+    padding: 40rpx 0rpx;
+    width: 45%;
+}
+
+.column-item image{
+    margin: 0 auto;
+    width: 250rpx;
+}

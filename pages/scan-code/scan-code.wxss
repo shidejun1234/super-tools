@@ -1,0 +1,19 @@
+page{
+    background: #e5e5e5;
+}
+.weui-cells__title{
+    background: #ffffff;
+}
+.weui-cell__bd{
+  min-height: 48rpx;
+  word-break: break-all;
+}
+.page-body{
+    margin: 0 auto;
+    text-align: center;
+}
+button{
+    width: 50%;
+    border-radius: 22rpx;
+    background: #2bac2b;
+}

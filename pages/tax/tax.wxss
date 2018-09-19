@@ -1,0 +1,49 @@
+.tax-input{
+    width: 95%;
+    margin: 20rpx auto;
+}
+.tax-input text{
+    font-size: 30rpx;
+}
+.tax-input input{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 30rpx 0rpx;
+}
+.tax-begin{
+    width: 95%;
+    margin: 20rpx auto;
+    padding: 30rpx 0rpx;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+}
+.tax-begin-left{
+    width: 80%;
+    text-align: left;
+}
+.tax-begin-right{
+    width: 20%;
+    text-align: left;
+    color: #5e5e5e;
+}
+.result{
+    width: 95%;
+    margin: 20rpx auto;
+    padding: 30rpx 0rpx;
+    display: flex;
+    flex-direction: row;
+}
+.result-left{
+    width: 50%;
+    text-align: right;
+}
+.result-right{
+    width: 50%;
+    padding-top: 8rpx;
+    margin-left: 40rpx;
+    font-size: 30rpx;
+}
+button{
+    background: #28b628;
+    width: 50%;
+}

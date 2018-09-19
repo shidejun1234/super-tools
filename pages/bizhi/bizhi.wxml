@@ -1,0 +1,6 @@
+<view class='img'>
+    <image src="{{aa}}" bindtap='imgYu' data-list="{{bb}}" data-src="{{aa}}"></image>
+</view>
+<view class='img'>
+    <button bindtap="aaa">点击切换图片</button>
+</view>
