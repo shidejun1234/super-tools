@@ -1,5 +1,8 @@
 {
     "pages": [
+        "pages/adesk/adesk",
+        "pages/tabs/index",
+        "pages/tag/index",
         "pages/index/index",
         "pages/one-article/one-article",
         "pages/tax/tax",

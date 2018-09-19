@@ -1,0 +1,5 @@
+<view class="tag-example">
+    <i-tag wx:for="{{tags}}" wx:key="{{index}}" name="{{index}}" color="{{item.color}}" type="border" style="margin-right:5px;">
+        {{item.name}}
+    </i-tag>
+</view>

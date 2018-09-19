@@ -1,0 +1,28 @@
+<scroll-view scroll-x="true" class="tabs" hidden='{{!categoryList}}'>
+    <i-tabs current="{{ current_scroll }}" scroll bindchange="handleChangeScroll">
+        <i-tab key="tab1" title="精选"></i-tab>
+        <block wx:for="{{categoryList}}" wx:key="{{item.id}}">
+            <i-tab key="{{item.id}}" title="{{item.name}}"></i-tab>
+        </block>
+    </i-tabs>
+</scroll-view>
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscrolltolower="lower" class='center'>
+    <view class='column'>
+        <block class='column-item' wx:for="{{imageList}}" wx:key="{{item.id}}">
+            <view class='column-item'>
+                <image src='{{item.thumb}}' bindtap='imgYu' data-list="{{item.wp}}" data-src="{{item.thumb}}" mode='widthFix'></image>
+            </view>
+        </block>
+    </view>
+    <view hidden='{{!categoryList}}'>
+        <view class="loading" hidden='{{!isBottom}}'>
+            <view class="loading-left"></view>
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+
+        <view class="i-divider-mart" hidden='{{isBottom}}'>
+            <i-divider content="不要扯了，已经到底了" lineColor="#80848f"></i-divider>
+        </view>
+    </view>
+</scroll-view>
